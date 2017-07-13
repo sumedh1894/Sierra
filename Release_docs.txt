@@ -1,0 +1,366 @@
+MailEnable Connector for Microsoft Outlook
+
+Release Notes
+-------------
+This client installation installs a MAPI Service Provider for Microsoft Outlook (2003 and later).
+The service provider provides rich Outlook Collaboration with MailEnable Enterprise Premium servers.
+
+Microsoft Outlook Configuration
+-------------------------------
+Once the client software has been installed, an Outlook profile will need to be either created or updated to allow you to access the MailEnable server.
+
+The following instructions are available for creating a new Outlook Profile for connecting to the MailEnable Enterprise Premium server.
+
+1. Either from within Outlook or from the Windows control panel, launch the wizard for creating a new profile.
+2. In the Add New E-Mail Account window, check the box to "manually configure server settings or additional server types" and click Next.
+3. A list of e-mail services should be listed containing "Internet E-mail", "Microsoft Exchange" and "Other". You should select the "Other" option, and from the list, select the "MailEnable Server" list item.
+4. You can now configure the settings for connecting and accessing the MailEnable Server. These follow below:
+
+	4.1 In the server address, specify the host name or IP address of the server running MailEnable.
+	4.2 For the account name, you should supply your MailEnable login in the form of Mailbox@Postoffice.
+	4.3 Enter the corresponding password for the above login
+	4.4 Enter your friendly name - typically first name followed by surname
+	4.5 Email address: Enter the primary email address for the login you have specified
+	4.6 For the account description, you can enter a name that will allow you to idenitfy the mailbox in Outlook - eg: your mailbox name
+	4.7 An advanced check box is available to allow you to configure some additional settings. In particular, the "Mailbox:" field on the Mailbox tab allows you to optionally specify another users mailbox to open (so you may access the resources of their mailbox while logged in with your own credentials). Under normal configuration, you could leave this field blank or the mailbox name associated with your own login. The other settings are largely self explanatory.
+
+Having configured the above, you can click OK and Outlook will configure the profile for access and allow you to login.
+
+
+30th Mar 2017: 2.72 Release
+---------------------------
+IMP: Added more logging when client receives notifications (to detect partial notification receives)
+
+15th Mar 2017: 2.71 Release
+---------------------------
+FIX: Client may crash if server index corruption occured (partially deleted items)
+
+21st Feb 2017: 2.70 Release
+---------------------------
+ADD: Added asynchronous move/deletion for improved responsiveness
+ADD: Added support for appointment category colors
+
+1st Feb 2017: 2.61 Release
+--------------------------
+FIX: Lync (Skype for Business) agent would load profiles causing synchronisation to occur; meaning Outlook may freeze on initial load
+
+12th Sep 2016: 2.60 Release
+---------------------------
+FIX: Client would produce invalid recurrence rules (containing COUNT and UNTIL attributes)
+
+12th Apr 2016: 2.58 Release
+---------------------------
+FIX: MAPI Client would hold server connections requiring the server to disconnect them after idle timeout
+FIX: Outlook 2003 and 2007 may crash on launch
+
+7th Mar 2016: 2.57 Release
+---------------------------
+IMP: Added new button to make Sharing more obvious to the user
+IMP: Reduced the file path length of cached information store
+IMP: Improved responsiveness of selecting folders
+
+20th Feb 2016: 2.56 Release
+---------------------------
+NOTE: Unpublished release
+
+11th Feb 2016: 2.55 Release
+---------------------------
+ADD: Can now select to background download folders and contents (under Connection Tab in account properties)
+IMP: Improved the speed of successive Free/Busy lookups
+FIX: SearchProtocolHost and COM surrogate may lock resources, causing freezing and Outlook startup errors
+FIX: Unresolved attendees will now report as unavailable rather than being available
+FIX: Spaces are removed from skype address (because they are not permitted)
+FIX: Message Duplication may occur if Outlook is Opened, Synced and Closed without modifying any messages
+FIX: MAPI connector may resend read receipts on resetting folder from server
+
+7th Feb 2016: 2.54 Release
+--------------------------
+FIX: Client will now only send TNEF content if the message does not have an attachment
+
+4th Feb 2016: 2.53 Release
+--------------------------
+FIX: Outlook 2003 is unstable when configuring folder bindings
+FIX: SearchProtocolHost may corrupt folder list, causing slow startup
+
+2nd Feb, 2016: 2.52 Release
+---------------------------
+IMP: Installer modified to support SHA256 signing of installation
+
+28th Jan, 2016: 2.51 Release
+---------------------------
+ADD: TNEF Support for Transport Provider (allowing Voting and other rich Outlook features)
+IMP: Improved load speed and concurrent access to multiple/delegate message stores
+FIX: Integration with SearchHostProtocol to allow indexing of messages
+FIX: Contacts with underscores and extended character e-mail addresses would not encode correctly
+FIX: Crash may occur when autosaving to drafts on Outlook 2010
+FIX: MAPI connector may resend read receipts on resetting folder from server
+
+22nd Jan, 2016: 2.5 Release
+---------------------------
+IMP: Improved Connection handling to reduce redundant server SELECT commands
+IMP: Significant speed improvements when bulk deleting items
+IMP: Improved internal memory management to improve integration with external MAPI applications
+FIX: Orphaned folders with extended character sets would not be replicated to the server
+
+7th May, 2015: 2.4 Release
+--------------------------
+IMP: Significant resource improvements (resulting from object caching improvements)
+IMP: Dowload all option now limits maximum object batch size to 10MB chunks (rather than 50 messages at a time)
+
+1st May, 2015: 2.3 Patch/Update
+--------------------------------
+FIX: Meeting organiser property was set in non-group appointments
+FIX: Recurring weekday appointments with N occurrences may not show all appointments
+
+27th Jan, 2015: 2.25 Release
+---------------------------
+IMP: Concolidated/single 32/64 bit installer (to simplify installs)
+FIX; Prevented collisions of delegate paths (where duplicate Postoffice Public folders could be added under seperate accounts)
+FIX: Fixed introduced issue where crash (null pointer exception) may occur with some Tasks
+
+16th Jan, 2015: 2.2 Release
+---------------------------
+FIX: Additional fixed in rendering extended characters in VCard and VCalendars in outlook client
+
+13th Jan, 2015: 2.1 Release
+---------------------------
+FIX: Upgraded VCard parsing library to prevent corruption and improve handling of VCard V3
+
+6th Feb, 2015: 2.0 Release
+---------------------------
+IMP: New presentation for Windows 2010 and later (using Ribbon bar rather than ADDON menu)
+IMP: Significant performance improvements when downloading large messages while concurrently performing other operations
+
+28th Jan, 2015: 2.0 Release
+---------------------------
+IMP: New presentation for Windows 2010 and later (using Ribbon bar rather than ADDON menu)
+IMP: Significant performance improvements when downloading large messages while concurrently performing other operations
+
+15th Sep, 2014: 1.64 Update
+---------------------------
+FIX: Malformed messages (illegally containing null characters) may cause client lockups
+
+9th July, 2014: 1.63 Update
+---------------------------
+IMP: Improved experience when operating over unstable network (fixed client freezing behaviour)
+
+6th March, 2014: 1.62 Update
+---------------------------
+FIX: Existing client while a folder was synchronising may result in folder appear as blank when client is reopened
+IMP: Reduced the frequency to which the client will notify of a broken server connection or network instability
+
+15th December, 2013: 1.61 Update
+---------------------------
+IMP: Improvements to sychronisation engine (speed, interface and performance improvements)
+FIX: Moving Folder branches no longer leaves orphaned source branches
+FIX: Added workaround where some extended characters would seemingly cause instabilility in Outlook RTF encoding engine
+
+15th Sept, 2013: 1.60 Update
+---------------------------
+INF: Beta Release
+
+22nd Aug, 2013: 1.59 Update
+---------------------------
+ADD: Client will now warn if you attempt to copy messages to folders that are not paired with a server folder (and will allow you to upload and pair the folder with the client) 
+
+29th May, 2013: 1.58 Update
+---------------------------
+ADD: New checkbox under advanced options to allow automatic update of installation.
+     This feature will check the mailenable web site on startup and will detect any update an ask the user whether they wish to have it applied (and will apply it)
+FIX: vCalendar items in legacy (Version 1) format may cause null pointer exception when parsed (and could cause crash within Outlook)      
+
+23th May, 2013: 1.57 Update
+---------------------------
+FIX: Outlook may display MAPI_E_INVALID_PARAMETER when connecting to a delegate mailbox (all outlook versions)
+FIX: Improved parsing of Tasks and Calendar items (for VCALENDAR V1.0, etc)
+
+9th May, 2013: 1.56 Update
+---------------------------
+FIX: Improved robustness of transport under load and low memory (fixes issue where items may not appear in inbox until Outlook is restarted)
+FIX: Global Address list was not always available in all locales
+
+5th May, 2013: 1.55 Update
+---------------------------
+FIX: Some messages may crash client by setting invalid document type (NULL pointer exception)
+
+21st April, 2013: 1.54 Update
+---------------------------
+FIX: Improved detection of unnecessary replication of Client changes to server (reduced bandwidth usage and improving responsiveness)
+ADD: Added send on behalf of support to client configuration
+
+29th January, 2013: 1.53 Update
+---------------------------
+IMP: Added additional "Other" postal address synchronisation to MailEnable Server
+FIX: Work and Home address mappings would cross over on edit
+
+
+27th January, 2013: 1.52 Update
+---------------------------
+IMP: MAPI Client will now send up synchronise additional postal address fields to the MailEnable Server
+FIX: Deletion of subfolders from with Outlook will now occir correctly and instantly
+FIX: MAPI Client will now remove residual profile data upon profile deletion
+FIX: MAPI Client will now decode legacy VCalendar 1.0 timezone blocks
+FIX: Improved support for handling contacts and calendars containing extended characters
+
+19th October, 2012: 1.51 Update
+---------------------------
+FIX: Contacts with asterixes in their description could lead to blank entries in global address list
+FIX: Address list on Outlook 2003 could be listed as blank when the client is reopened
+
+4th Sep, 2012: 1.50 Update
+---------------------------
+ADD: New profiles will now use new global address book (that provides extended properties for GAL entries) - Requires server version 6.60 or later
+IMP: Significant speed performance improvements when exchanging client and server updates.
+FIX: Items created using EAS (ActiveSync) containing extended characters may render in Outlook in their encoded form.
+
+24th May, 2012: 1.43 Update
+---------------------------
+FIX: Improvements to the handling of extended characters in contact fields
+IMP: Improved support for detecting network outages and resynchronization
+
+11th January, 2012: 1.42 Update
+-------------------------------
+IMP: Now viewing and editing items in the address book uses the full Outlook appearance like Contacts
+FIX: Sending an email to a group in shared contact folder you are connected to would not work
+
+15th December, 2011: 1.41 Update
+--------------------------------
+FIX: Sending an email to a group that was in someone elses shared contact folder was not working
+FIX: Some quoted printable MIME encoded headers used for contact names with extended characters may not display correctly
+FIX: Shutting down Outlook may cause flag loss or duplicate message
+FIX: Was not correctly saving appointments to server for timezones that indicated just one daylight savings change
+
+30th October, 2011: 1.40 Update
+-------------------------------
+IMP: Significant speed and usability improvements (synchronization no longer presents modal wait dialogs)
+IMP: Server change notifications are now only processed for folders that are actively being used in the client
+
+19th August, 2011: 1.39 Update
+------------------------------
+FIX: Server side messages migrated from other mail servers (with short file names) would display with blank content
+FIX: Meeting requests would not be displayed as requests until fully downloaded from the server
+
+21st July, 2011: 1.38 Update
+----------------------------
+FIX: Suggested Contacts folder is not replicated to server (preventing custom folder error when creating new profile)
+FIX: Client will validate folder changes when server connection has been interrupted.
+
+20th April, 2011: 1.37 Internal Beta Release
+--------------------------------------------
+INF: Internal Release for testing and beta trial
+
+3rd March, 2011: 1.36 Update
+----------------------------
+FIX: Was not falling back to alternate method of sending emails to Sent Items folder for server versions before 5.05
+
+22nd February, 2011: 1.35 Update
+--------------------------------
+FIX: Transport(Outbox) prevents invalid addressed messages from blocking the sending of valid messages
+IMP: Improved connection pooling (placing less load on the server)
+
+24th January, 2011: 1.34 Update
+-------------------------------
+FIX: Client will now synchronize Sent Items folder with items sent via webmail (or items within Sent Items folder of server).
+
+16th December, 2010: 1.33 Update
+--------------------------------
+FIX: Client may freeze while processing large numbers of changes from server notifications
+FIX: Attendees may not appear in appointments when synchronized from CalDAV or SyncML clients
+
+11th November, 2010: 1.32 Update
+--------------------------------
+FIX: Contacts created in webmail may not fully populate all e-mail fields when updated in MAPI client.
+     Sending to these recipients may leave message spooling in Outbox.
+     To resolve, once the fix has been appled, you should reset the contents of the Contacts folder from the server.
+
+3rd November, 2010: 1.31 Update
+-------------------------------
+FIX: Introduced bug (in 1.30) where directory may be updated or display entries.
+
+
+27th October, 2010: 1.30 Update
+-------------------------------
+FIX: Global Address Book Entries containing extended characters may cause client to randomly crash.
+FIX: Outlook may crash on exit as it releases memory and system resources
+IMP: MAPI Client now uploads contact photos to server (which can be used in MailEnable version 5).
+
+
+19th August, 2010: 1.29 Update
+------------------------------
+FIX: Folder Rules and Actions were not shown in some Outlook configurations
+FIX: Some profiles may occasionally crash on exit
+IMP: Improved interoperability with non-Outlook MAPI applications
+
+29th June, 2010: 1.28 Update
+----------------------------
+IMP: Progress dialog will not display as frequently.
+IMP: Minor speed improvements when updating/modifying messages.
+FIX: Global Address List entries with unusual characters could result in Outlook crash.
+FIX: Auto Archive may crash Outlook
+FIX: Contact E-mail address field may not synchronize to server
+
+9th June, 2010: 1.27 Update
+---------------------------
+IMP: Significant speed improvements when loading outlook client
+FIX: Client may crash when processing malformed server VCARD
+
+29th May, 2010: 1.26 Update
+---------------------------
+FIX: Client may crash on startup when loading profiles with multiple accounts
+
+22nd May, 2010: 1.25 Update
+---------------------------
+ADD: Native Support for opening another users folders (New menu option activated for 2007 and 2010)
+ADD: Delegate folders now work in Outlook 2010
+IMP: Delegates (other mailboxes, public foldes and file root) are now significantly faster and stable
+FIX: Could not remove message from Outbox irrespective of sending status
+FIX: Autosignature would not always save correctly on server
+FIX: MAPI client is incorrectly assuming appointments are in GMT if no timezone
+FIX: On a mailbox which is not shared with full access users can still attempt to create folders through the MAPI client
+FIX: Recurring appointments showing incorrectly in oulook connector
+
+1st April, 2010: 1.24 Update
+----------------------------
+FIX: Forwarded messages flags were not displayed
+FIX: Appointments created in webmail with extended characters were not displaying correctly in client
+FIX: Client was allowing creation of folders when not connected
+FIX: Client was allowing creation of custom Calendars but they are not supported 
+FIX: Editing appointments could make CalDav clients think it is a new appointment (iPhone)
+
+8th February, 2010: 1.23 Update
+-------------------------------
+FIX: Some recurring appointment reminders may not dismiss.
+FIX: Recurrence exceptions could be overwritten when non-recurrence related information is updated on the server.
+FIX: Troubleshooting logging extremely slow (giving the perception that Outlook has stopped responding).
+
+2nd February, 2010: 1.22 Update
+-------------------------------
+FIX: Transport may fail to remove messages sent by SSL from Outbox
+FIX: Transport provides improved feedback for transmission errors
+IMP: Logging is now less verbose by default
+
+14th January, 2010: 1.2 Update
+------------------------------
+FIX: Imported Contacts will now replacate all properties to MailEnable Server
+FIX: Client will create Calendar, Task, etc folders for owner-access mailboxes on server where they do not exist.
+FIX: Client will handle illegal characters (slashes) in folder names on import
+FIX: Contacts with extended characters may not appear or display correctly in client and/or webmail
+IMP: Transport now detects optimal SMTP transmission buffer size
+IMP: Significant speed improvements when updating server
+IMP: More information on progress dialogs
+IMP: Client will preserve header information and flags from imported/copied messages
+IMP: Client will display dialog to advise that server is offline
+
+6th January, 2010: 1.1 Update
+-----------------------------
+ADD: Offline Support - allows messages to be accessed and modified while not connected to server
+ADD: Connection recovery - if service is disconnected, operations are batched and applied when server is available
+IMP: Free/Busy granularity changed to 30 minutes rather than 1 hour (requires Enterprise Premium 4.18 or later)
+MOD: Layout change to progress dialog
+FIX: Free Busy information for some accounts would not be displayed unless the case of the account postoffice or host name matched the domain name. 
+FIX: Recurring appointments edited or created in webmail may not display at the correct time in Outlook (and may not even appear)
+FIX: Reminders may not be dismissed (existing installs will need to refresh folder from server)
+
+23rd December, 2009: Initial Release
+------------------------------------
+Initial Release

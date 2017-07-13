@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Spam Policy</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper" text-align: right>
+      <a id="logo-container" href="webpage2.html" class="brand-logo"><img src="Sierralogo.png"/></a>
+      <ul class="right hide-on-med-and-down" >
+        <li><a href="webpage2.html" class="newfont">Home</a></li>
+        <li><a href="password_check/passwordcheck.html" class="newfont">Check Password Strength</a></li>
+        <li><a href="#" class="newfont">Setup Mobile Device</a></li>
+        <li><a href="mapi.html" class="newfont">MAPI Download</a></li>
+        <li><a href="http://www.sierrany.net/" class="newfont">Support</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="webpage2.html">Home</a></li>
+        <li><a href="password_check/passwordcheck.html">Check Password Strength</a></li>
+        <li><a href="#">Setup Mobile Device</a></li>
+        <li><a href="mapi.html">MAPI Download</a></li>
+        <li><a href="http://www.sierrany.net/">Support</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+   <div class="container">
+       
+        <h1 class="header center teal-text text-lighten-2">Sierra Consulting Group</h1>
+      </div>
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+ <div class="col s12 m12 lg12">
+   <h5 class="left-align">Spam Policy</h5><br /> <br />
+            <h5 class="left-align">Ultratek Computers and Communications - MJJT Consultants Ltd. </h5><br />
+            <h5 class="left-align">Anti-Spam Policy </h5>
+
+            <p class="light left-align ">MJJT Consultants Ltd. does not tolerate the transmission of spam. We monitor all traffic to and from our web servers for indications of spamming and maintain a spam abuse compliant center to register allegations of spam abuse. Customers suspected to be using Ultratek Computers and Communications - MJJT Consultants Ltd. products and services for the purpose of sending spam are fully investigated. Once Ultratek Computers and Communications - MJJT Consultants Ltd. determines there is a problem with spam, Ultratek Computers and Communications - MJJT Consultants Ltd. will take the appropriate action to resolve the situation. If you see any indications of spam abuse please submit a ticket through our Helpdesk.</p>
+             <h5 class="left-align">How We Define Spam </h5>
+             <p class="light left-align ">We define spam as the sending of Unsolicited Commercial Email (UCE), Unsolicited Bulk Email (UBE) or Unsolicited Facsimiles (Fax), which is email or facsimile sent to recipients as an advertisement or otherwise, without first obtaining prior confirmed consent to receive these communications from the sender. This can include, but is not limited to, the following:</p> 
+             <ol class="light left-align ">
+               <li>Email Messages</li>
+               <li>Newsgroup postings</li>
+               <li>Windows system messages</li>
+               <li>Pop-up messages (aka "adware" or "spyware" messages)</li>
+               <li>Instant messages (using AOL, MSN, Yahoo or other instant messenger programs)</li>
+               <li>Online chat room advertisements</li>
+               <li>Guestbook or Website Forum postings</li>
+               <li>Facsimile Solicitations</li>
+             </ol>
+              <h5 class="left-align">What We Allow and Don't Allow</h5>
+             <p class="light left-align ">We will not allow our servers and services to be used for the purposes described above. In order to use our products and services, you must not only abide by all applicable laws and regulations, which include the Can-Spam Act of 2003 and the Telephone Consumer Protection Act, but you must also abide by Ultratek Computers and Communications - MJJT Consultants Ltd.'s no spam policies. Commercial advertising and/or bulk emails or faxes may only be sent to recipients who have already "opted-in" to receive messages from the sender specifically. They must include a legitimate return address and reply-to address, the sender's physical address, and an opt-out method in the footer of the email or fax. Upon request by Ultratek Computers and Communications - MJJT Consultants Ltd., conclusive proof of opt-in may be required for an email address or fax number.</p>
+            <h5 class="left-align">What We Do</h5>
+            <p class="light left-align ">If Ultratek Computers and Communications - MJJT Consultants Ltd. determines the services in question are being used in association with spam, Ultratek Computers and Communications - MJJT Consultants Ltd. will re-direct, suspend, or cancel any web site hosting, domain registration, email boxes or other applicable services for a period of no less than two (2) days. The registrant or customer will be required to respond by email to Ultratek Computers and Communications - MJJT Consultants Ltd. stating that they will cease to send spam and/or have spam sent on their behalf. Ultratek Computers and Communications - MJJT Consultants Ltd. will require a non-refundable reactivation fee to be paid before the site, email boxes and/or services are reactivated. In the event Ultratek Computers and Communications - MJJT Consultants Ltd. determines the abuse has not stopped after services have been restored the first time, Ultratek Computers and Communications - MJJT Consultants Ltd. may terminate the hosting and email boxes associated with domain name in question. To Report Spam Abuse: We encourage all customers and recipients of email generated from our products and services to report suspected spam. Suspected abuse can be reported by email or through our Spam Abuse Compliant Center on the Web.<br />Web: helpdesk.ultratek.com</p>
+            <h5 class="left-align">Revised: 1/21/2012</h5>
+          </div>
+        </div>        
+        
+        
+        </div>
+    </div>
+</div>
+  
+<br />
+ 
+
+
+  
+
+  <footer class="page-footer teal section">
+    <div class="footer-copyright">
+      <div class="container center">
+      <p class="white-text"><a class="white-text" href="/termsofservices.html">Terms of Services </a>|<a class="white-text" href="privacy_policy.html"> Privacy Policy </a>| <a class="white-text" href="spam_policy.html">Spam Policy</a><br />
+                               Copyright &#169; 2012 MJJT Consultants Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+        
+       
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
